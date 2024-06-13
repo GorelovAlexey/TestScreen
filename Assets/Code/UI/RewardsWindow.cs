@@ -52,8 +52,19 @@ namespace Assets.Code.UI
             scrollRect.horizontalNormalizedPosition = 0;
         }
 
+        private void CleanUp()
+        {
+            hintView.gameObject.SetActive(false);
+
+            for (var i = 0; i < content.childCount; i++)
+            {
+                Destroy(content.GetChild(i).gameObject);
+            }
+        }
+
         protected override void OnHide()
         {
+            CleanUp();
         }
     }
 }

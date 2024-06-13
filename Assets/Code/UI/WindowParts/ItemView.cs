@@ -1,8 +1,6 @@
 ﻿using Code.Inventory;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
 
 namespace Assets.Code.UI
 {
